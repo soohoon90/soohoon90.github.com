@@ -1,33 +1,25 @@
 # This is One Page Experiment #1
 
-This page experiments with three ideas
+This page experiments with three ideas:
 
-* Parallax Scrolling
+* Parallax Scrolling - This is like nikebetterworld.com
+* Web Fonts - It is time to use cool fonts online too :)
+* CSS3 Text Decorations - Fun fun fun fun :)
 
-This is like nikebetterworld.com
+## Resources Used
 
-* Web Fonts
-
-It is time to use cool fonts online too :)
-
-* CSS3 Text Decorations
-
-Fun fun fun fun :)
-
-# Resources Used
-
-## Tutorials
+### Tutorials
 
 Many, including but not limited to:
 
 * http://coding.smashingmagazine.com/2011/07/12/behind-the-scenes-of-nike-better-world/
 
-## Frameworks & Libraries
+### Frameworks & Libraries
 
 * jQuery
 * HTML5 Boilerplate
 
-## Backgrounds
+### Backgrounds
 
 * http://www.colourlovers.com/pattern/465753/Navaho
 * http://www.colourlovers.com/pattern/1101098/When_We_Parted
@@ -40,7 +32,7 @@ Many, including but not limited to:
 * http://www.colourlovers.com/pattern/176757/Clouds_Impressions
 * http://www.colourlovers.com/pattern/971659/rising_temps
 
-## Fonts from Google Web Fonts
+### Fonts from Google Web Fonts
 
 * Monoton
 * Delius+Unicase
