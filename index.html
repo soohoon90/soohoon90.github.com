@@ -1,83 +1,159 @@
-
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8">
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>One Page Experiment #1: Parallax Scrolling</title>
-  <meta name="description" content="How to create a parallax scrolling effect with jQuery, HTML and CSS">
-  <meta name="author" content="Richard Shepherd, Smashing Magazine">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='http://fonts.googleapis.com/css?family=Monoton|Delius+Unicase|Alike|Montez|Rochester|Sue+Ellen+Francisco|Patrick+Hand|Gloria+Hallelujah|Give+You+Glory|Over+the+Rainbow' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Soo Hoon Cho 3A Software Engineering Resume</title>
+<style type="text/css">
+	body {
+		background-color: white;
+		margin: 0;
+		padding: 0;
+		line-height: 1.15em;
+		font-family: Helvetia, Arial, sans-serif;
+	}
+	.page {
+		width: 700px;
+		margin: 50px auto;
+        border: 1px solid #ddd;
+		padding: 50px;
+		background-color: white;
+		font-size: 13px;
+		-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2),
+            inset 0 0 25px rgba(0, 0, 0, 0.03),
+            -5px -5px 0 #f6f6f6,
+            -5px -4px 5px rgba(0,0,0,.21),
+            5px -10px 0 #fafafa,
+            5px -9px 5px rgba(0,0,0,.21);
+        -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2),
+	        inset 0 0 25px rgba(0, 0, 0, 0.03),
+	        -5px -5px 0 #f6f6f6,
+            -5px -4px 5px rgba(0,0,0,.21),
+            5px -10px 0 #fafafa,
+            5px -9px 5px rgba(0,0,0,.21);
+        -box-shadow: 0 0 15px rgba(0,0, 0, 0.2),
+	        inset 0 0 25px rgba(0, 0, 0, 0.03),
+	        -5px -5px 0 #f6f6f6,
+            -5px -4px 5px rgba(0,0,0,.21),
+            5px -10px 0 #fafafa,
+            5px -9px 5px rgba(0,0,0,.21);
+    }
+	.pagebreak{
+		page-break-before:always;
+	}
+	.page h1, .page h2, .page h3{
+		font-family: Helvetia, Arial, sans-serif;
+		font-weight: bold;
+	}
+	.page h1 {
+		font-size: 48px;
+		letter-spacing: -0.1em;
+		margin: 0.75em 0 0.75em 0;
+        text-align: center;
+	}
+	.page h2 {
+		font-size: 14px;
+		font-weight: normal;
+		margin: 0;
+        text-align: center;
+	}
+	.page h3 {
+		font-size: 16px;
+		margin-top: 1em;
+		padding-top: 1em;
+		border-top: 1px solid black;
+	}
+	.page p, .page ul{
+		margin-bottom: 0.5em;
+	}
+	.page p strong{
+	    font-size: 1.15em;
+	}
+    .page li strong{
+        font-size: 1.1em;
+    }
+	.style1 {
+		color: #0033FF
+	}
+	.style2 {
+		font-size: 12px;
+		font-family: Arial, Helvetica, sans-serif;
+		line-height: 1.2em;
+		margin-bottom: 1em;
+	}
+</style>
+<style type="text/css" media="print">
+    body{
+        background: none;
+    }
+	.page {
+	    padding: none;
+		border: none;
+		-moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+	}
+</style>
 </head>
-
 <body>
-
-  <div id="main" role="main">
-
-	<!-- Section #1 / Intro -->
-	<section id="first" class="story" data-speed="8" data-type="background">    	
-		<div class="smashinglogo" data-type="sprite" data-offsetY="100" data-Xposition="50%" data-speed="-2"></div>		
-		<article>
-
-			<img src="images/tutorial-title.png" alt="tutorial-title" width="711" height="242" />
-			<p>Words and pictures by Richard Shepherd / Twitter: <a href="http://twitter.com/richardshepherd" target="_blank">@richardshepherd</a> / Web: <a href="http://richardshepherd.com">richardshepherd.com</a></p>
-			<p>GitHub: <a href="https://github.com/richardshepherd/Parallax-Scrolling/">Fork it here!</a></p>
-	    </article>
-	</section>
-
-	<!-- Section #2 / Background Only -->
-	<section id="second" class="story" data-speed="4" data-type="background">
-		<article>
-			<h2>Background Only</h2>
-		    	<p>In this section we are sliding the background at a different speed to the rest of the page.</p>
-		    	<p>As this text box is scrolling at the same speed as the page, and faster than the background, it creates this lovely parallax effect.</p>
-		    	<p>You can find all the HTML, CSS and the all important JavaScript files over at <a href="https://github.com/richardshepherd/Parallax-Scrolling">GitHub</a> - so why don't you drop by for some hardcore forking action?</p>
-		    	<p>Backgrounds for this article were taken from the May/June 2011 Smashing Magazine Desktop backgrounds.</p>	
-		    	<p>Head back to <a href="http://coding.smashingmagazine.com/2011/07/12/behind-the-scenes-of-nike-better-world/">Smashing Magazine</a>, or hop on over to <a href="http://richardshepherd.com">RichardShepherd.com</a>.</p>		
-		</article>
-	</section>
-
-	<!-- Section #3 / Photos -->
-	<section id="third" class="story" data-speed="6" data-type="background" data-offsetY="250">    	
-		<div class="photograph" data-type="sprite" data-offsetY="1250" data-Xposition="25%" data-speed="2"></div>
-    	<article>
-    		<h2>Scrolling Sprites</h2>
-	    	<div class="textbox">    	
-		    	<p>The next step in your parallax scrolling adventure is to create some sprites!</p>
-		    	<p>I have cut out one of the photos in this background and use it as a sprite. It scrolls at a different speed to the background <i>and</i> the window, and it's this effect that's used so well on Nike Better World and other parallax sites..</p>
-		    	<p>Using too many sprites can slow down older computers, and you need to use some clever maths (and trial & error!) to work out their placement on the page.</p>
-		    </div>
-    	</article>
-	</section>	
-
-
-	<!-- Section #4 / HTML5 Video -->
-	<section id="fourth" class="story" data-speed="8" data-type="background" data-offsetY="250">
-    	<article>
-    		<h2>HTML5 Video</h2>
-	    	<div class="textbox">    	
-		    	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-		    	<p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-		    	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. o.</p>
-		    </div>
-    	</article>
-		<video controls width="640" width="480" data-type="video" data-offsetY="2400" data-speed="1.5">
-			<source src="video/parallelparking.theora.ogv" type="video/ogg" />
-			<source src="video/parallelparking.mp4" type="video/mp4" />
-			<source src="video/parallelparking.webm" type="video/webm" />
-		</video>
-	</section>	
-
-	<!-- Section #5 / The End-->
-	<section id="theend" class="story" data-speed="8" data-type="background" data-offsetY="250">    	
-		<div class="byebye" data-type="sprite" data-offsetY="-1600" data-Xposition="50%" data-speed="-2"></div>	
-	</section>
-
-  </div> <!-- // End of #main -->
+<div class="page">
+	<h1>Soo Hoon Cho</h1>
+	<h2>"Hoon Like the Moon"</h2>
+	<h2>3B Sofware Engineering</h2>
+	<h2>20299387</h2>
+	<p class="style2"> 
+		<strong>Email</strong>: <span class="style1">soohoon90@gmail.com</span><br />
+		<strong>Website</strong>: <span class="style1">http://hoonlikethemoon.com</span><br />
+		<strong>Github</strong>: <span class="style1">http://github.com/soohoon90</span><br />
+		<strong>Phone</strong>: (519) 590-9895 <br />
+		<strong>Address</strong>: 2622 Marble Court, Coquitlam, BC, V3E 2W2 
+	</p>
+	<h3> SKILLS SUMMARY</h3>
+	<ul>
+		<li>Can <strong>get things done</strong>; very adaptable and can dive into new environment quickly</li>
+		<li><strong>Strong communication skills</strong> and interpersonal skills; fluent in <strong>English and Korean</strong></li>
+		<li>Work experience in big data processing using <strong>Hadoop & Hive</strong></li>
+		<li>Working knowledge of <strong>C / C++, Java, Python</strong></li>
+		<li>Extensive experience in web development in <strong>HTML, JavaScript, CSS, PHP & MySQL</strong></li>
+		<li>Experience in developing <strong>Web/Voice IVR applications</strong></li>
+		<li>Experience in business intelligence and data warehousing in <strong>SAP & Hive</strong></li>
+	</ul>
+	<h3> WORK EXPERIENCE</h3>
+	<p><strong>Data Engineer at Facebook</strong>, Palo Alto, California, April 2011 - August 2011</p>
+	<ul>
+		<li>Developed new data pipelines using <strong>Hadoop and Hive</strong> to provide new analytic metrics for Pages Insights</li>
+		<li>Experience in creating fault tolerating design for large scale data processing</li>
+		<li>Created UI mocks to communicate new product design ideas</li>
+		<li>Helped in development of new Ads product in <strong>PHP</strong></li>
+	</ul>
+	<p><strong>Developer at Telus</strong>, Burnaby, BC, September 2010 - December 2010</p>
+	<ul>
+		<li>Developed an IVR application in <strong>VXML</strong> to route callers to on-call support personnels</li>
+		<li>Developed an web application for managing support schedules with <strong>Java, JSP, Struts MVC Framework</strong></li>
+	</ul>
+	<p><strong> Web Developer/QA Analyst at Shoppers Drug Mart</strong>, Toronto, ON, January 2010 - April 2010</p>
+	<ul>
+		<li>Developed new internal website for more efficient sharing and collobrating on documents</li>
+		<li>Designed overall architecture of the website including access control and user editable contents</li>
+		<li>Implemented some SharePoint Server APIs through use of ASP.NET</li>
+	</ul>
+	<p><strong>Quality Assurance Analyst at Indigo Books &amp; Music</strong>, Toronto, ON, May 2009 - August 2009 </p>
+	<ul>
+		<li>Designed, developed, implemented and executed test plans and test cases </li>
+		<li>Analyzd and ensured functional, technical and business requirements for projects </li>
+		<li>Interacted with software developers to ensure the deliverables meet testing requirements </li>
+		<li>Worked with softwares and systems including: SAP, POS system, HP Quality Center, and JIRA</li>
+	</ul>
+	<h3> PROJECTS & ACTIVITIES</h3>
+	<ul>
+		<li><strong>Socially Available</strong> - keeps track of your friends availability to hangout in <strong>Node.js & Socket.io</strong></li>
+		<li><strong>Graph Dot Processor</strong> - Generates beautiful graph visualization using <strong>Processing</strong></li>
+		<li><strong>Friend List Hack</strong> - a Facebook application that lets you sort your friends into lists in <strong>PHP & JavaScript</strong></li>
+		<li><strong>The Resume Builder</strong> - flexible templates that pulls information from Facebook API in <strong>JavaSript</strong></li>
+		<li><strong>Top Down Shooting Game</strong> - shooting game built with <strong>Python & pyGame</strong></li>
+		<li><strong>Log Spitter</strong> - parses <strong>Hive logs </strong> to see point of failure for frequent reruns and tests</li>
+		<li><strong>Starup Weekends</strong> - living at Velocity, an entrepreneurial residence at uWaterloo with Hackathons</li>
+		<li><strong>Server Management</strong> - hosted VPS with LAMP and File Server</li>
+	</ul>
+</div>
 </body>
 </html>
