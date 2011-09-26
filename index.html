@@ -16,7 +16,8 @@
         border: 1px solid #ddd;
 		padding: 50px;
 		background-color: white;
-		font-size: 13px;
+		font-size: 14px;
+        color: #333;
 		line-height: 1.5em;
         box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.03),
             0 0 7px rgba(0,0, 0, .3),
@@ -28,9 +29,16 @@
 	.pagebreak{
 		page-break-before:always;
 	}
+    .page a{
+        text-decoration: none;
+    }
+    .page ul{
+        list-style: square;
+    }
 	.page h1, .page h2, .page h3{
 		font-family: Helvetia, Arial, sans-serif;
 		font-weight: bold;
+        color: #111;
 	}
 	.page h1 {
 		font-size: 3.5em;
@@ -43,12 +51,14 @@
 		margin: 0;
         line-height: 1;
         text-align: center;
+        font-weight: lighter;
 	}
 	.page h3 {
-		font-size: 1.2em;
+		font-size: 1.3em;
 		margin-top: 1em;
 		padding-top: 1em;
 		border-top: 1px solid #ddd;
+        font-weight: lighter;
 	}
 	.page p, .page ul{
 		margin-bottom: 0.3em;
@@ -56,6 +66,7 @@
 	}
 	.page p strong{
 	    font-size: 1.05em;
+        color: #111;
 	}
     .page li strong{
         font-size: 1.05em;
@@ -65,7 +76,7 @@
 	}
 	.style2 {
 		font-size: 12px;
-        line-height: 1;
+        line-height: 1.1;
 		font-family: Arial, Helvetica, sans-serif;
 		margin-bottom: 1em;
 	}
@@ -93,9 +104,9 @@
 	<h2>"Hoon Like the Moon"</h2>
 	<h2>3B Sofware Engineering</h2>
 	<p class="style2"> 
-		<strong>Email</strong>: <span class="style1">soohoon90@gmail.com</span><br />
-		<strong>Website</strong>: <span class="style1">http://hoonlikethemoon.com</span><br />
-		<strong>Github</strong>: <span class="style1">http://github.com/soohoon90</span><br />
+		<strong>Email</strong>: <a href="mailto:soohoon90@gmail.com">soohoon90@gmail.com</a><br />
+		<strong>Website</strong>: <a href="http://hoonlikethemoon.com">http://hoonlikethemoon.com</a><br />
+		<strong>Github</strong>: <a href="http://github.com/soohoon90">http://github.com/soohoon90</a><br />
 		<strong>Phone</strong>: (519) 590-9895 <br />
 		<strong>Address</strong>: 2622 Marble Court, Coquitlam, BC, V3E 2W2 
 	</p>
@@ -111,7 +122,7 @@
 	<h3> WORK EXPERIENCE</h3>
 	<p><strong>Data Engineer at Facebook</strong>, Palo Alto, California, April 2011 - August 2011</p>
 	<ul>
-		<li>Developed new data pipelines using <strong>Hadoop and Hive</strong> to provide new analytic metrics for Pages Insights</li>
+		<li>Developed new large scale data pipelines using <strong>Hive</strong> providing analytics for Pages product</li>
 		<li>Experience in creating fault tolerating design for large scale data processing</li>
 		<li>Created UI mockups and prototypes to communicate new product design ideas</li>
 		<li>Helped in development of new Ads product in <strong>PHP</strong></li>
