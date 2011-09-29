@@ -48,16 +48,19 @@
 	}
 	.page h1 {
 		font-size: 3.5em;
+		line-height: 1;
 		letter-spacing: -0.1175em;
-		margin: 0.75em 0 0.75em 0;
+		margin: 0.75em 0 0 0;
         text-align: center;
 	}
 	.page h2 {
-		font-size: 1.05em;
+		font-size: 0.85em;
+		color: #333;
 		margin: 0;
         line-height: 1;
         text-align: center;
-        font-weight: lighter;
+        font-weight: bold;
+		text-transform: uppercase;
 	}
 	.page h3 {
 		font-size: 1.3em;
@@ -78,14 +81,18 @@
     .page li strong{
         font-size: 1.05em;
     }
-	.style1 {
-		color: #0033FF
-	}
-	.style2 {
-		font-size: 12px;
-        line-height: 1.1;
+	.page .info {
+		font-size: 0.85em;
+		margin-top: 3em;
+        line-height: 1.3;
 		font-family: Arial, Helvetica, sans-serif;
 		margin-bottom: 1em;
+	}
+	.page .info strong{
+		font-size: 0.9em;
+/*		font-weight: normal;*/
+		letter-spacing: 0.25em;
+		text-transform: uppercase;
 	}
 </style>
 <style type="text/css" media="print">
@@ -106,17 +113,13 @@
         margin-bottom: 0;
         padding-bottom: 0;
     }
-    .page h1{
-        margin-top: 0;
-        margin-bottom: 0.25em;
-    }
 </style>
 </head>
 <body>
 <div class="page">
 	<h1>Hoon Cho</h1>
 	<h2>3B Software Engineering</h2>
-	<p class="style2"> 
+	<p class="info"> 
 		<strong>Email</strong>: <a href="mailto:soohoon90@gmail.com">soohoon90@gmail.com</a><br />
 		<strong>Website</strong>: <a href="http://hoonlikethemoon.com">http://hoonlikethemoon.com</a><br />
 		<strong>Github</strong>: <a href="http://github.com/soohoon90">http://github.com/soohoon90</a><br />
