@@ -35,11 +35,23 @@ var timeline = {
             year: 2012,
             term: 2
         },
-
-    ]
-
-
-
-
-
+    ],
+    uniqueEntryPerTerm: function(){
+        var uniques = {}
+        for (entry in this.entries){
+            var year = entry.year;
+            var term = entry.term;
+            
+        }
+    }
 }
+
+
+
+
+$(function() {
+    for (entry in timeline.entries){
+        
+        
+    }
+});
