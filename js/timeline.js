@@ -36,22 +36,17 @@ var timeline = {
             term: 2
         },
     ],
-    uniqueEntryPerTerm: function(){
-        var uniques = {}
-        for (entry in this.entries){
-            var year = entry.year;
-            var term = entry.term;
-            
-        }
-    }
 }
 
 
 
 
 $(function() {
+    var str = '<ul id="theTimeline">';
     for (entry in timeline.entries){
-        
-        
+       str += "<li><strong>"+entry.title+"</strong> - "+entry.year+"</li>";
     }
+    str += '</ul>
+    console.log(str);
+    $('#timeline').html(str);
 });
