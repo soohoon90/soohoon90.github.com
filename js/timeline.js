@@ -38,15 +38,12 @@ var timeline = {
     ],
 }
 
-
-
-
 $(function() {
     var str = '<ul id="theTimeline">';
     for (entry in timeline.entries){
        str += "<li><strong>"+entry.title+"</strong> - "+entry.year+"</li>";
     }
-    str += '</ul>
+    str += '</ul>';
     console.log(str);
     $('#timeline').html(str);
 });
