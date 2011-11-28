@@ -1,5 +1,2 @@
 # Hoon's GitHub Page
- this place is an awesome place to host some static html files for free! Like my
- html resume for example!
-
-
+this is where I will be storing my personal site to host my resume, portfolio and timeline.
